@@ -15,6 +15,9 @@
 		7277A50C204E8FFC002A391E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7277A50B204E8FFC002A391E /* main.m */; };
 		7277A516204E8FFD002A391E /* HSZRemindUserToUpdateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7277A515204E8FFD002A391E /* HSZRemindUserToUpdateTests.m */; };
 		7277A521204E8FFD002A391E /* HSZRemindUserToUpdateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7277A520204E8FFD002A391E /* HSZRemindUserToUpdateUITests.m */; };
+		7277A532204E90E3002A391E /* SZUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7277A531204E90E3002A391E /* SZUtils.m */; };
+		7277A535204F8D69002A391E /* RemindUpdateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7277A534204F8D69002A391E /* RemindUpdateView.m */; };
+		91CF9AFCBE7E6259B4F96C72 /* libPods-HSZRemindUserToUpdate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF8FD1ED48BE29F2EC03417 /* libPods-HSZRemindUserToUpdate.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FF8FD1ED48BE29F2EC03417 /* libPods-HSZRemindUserToUpdate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HSZRemindUserToUpdate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6423583112473A7EF89C07 /* Pods-HSZRemindUserToUpdate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSZRemindUserToUpdate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HSZRemindUserToUpdate/Pods-HSZRemindUserToUpdate.debug.xcconfig"; sourceTree = "<group>"; };
 		7277A4F9204E8FFC002A391E /* HSZRemindUserToUpdate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSZRemindUserToUpdate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7277A4FC204E8FFC002A391E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7277A4FD204E8FFC002A391E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +56,11 @@
 		7277A51C204E8FFD002A391E /* HSZRemindUserToUpdateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HSZRemindUserToUpdateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7277A520204E8FFD002A391E /* HSZRemindUserToUpdateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSZRemindUserToUpdateUITests.m; sourceTree = "<group>"; };
 		7277A522204E8FFD002A391E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7277A530204E90E3002A391E /* SZUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZUtils.h; sourceTree = "<group>"; };
+		7277A531204E90E3002A391E /* SZUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZUtils.m; sourceTree = "<group>"; };
+		7277A533204F8D69002A391E /* RemindUpdateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemindUpdateView.h; sourceTree = "<group>"; };
+		7277A534204F8D69002A391E /* RemindUpdateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemindUpdateView.m; sourceTree = "<group>"; };
+		F82D68B3C809BA58E90C297B /* Pods-HSZRemindUserToUpdate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSZRemindUserToUpdate.release.xcconfig"; path = "Pods/Target Support Files/Pods-HSZRemindUserToUpdate/Pods-HSZRemindUserToUpdate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91CF9AFCBE7E6259B4F96C72 /* libPods-HSZRemindUserToUpdate.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		601EF7BE27A0D6D1E77FBC4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FF8FD1ED48BE29F2EC03417 /* libPods-HSZRemindUserToUpdate.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7277A4F0204E8FFC002A391E = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +104,8 @@
 				7277A514204E8FFD002A391E /* HSZRemindUserToUpdateTests */,
 				7277A51F204E8FFD002A391E /* HSZRemindUserToUpdateUITests */,
 				7277A4FA204E8FFC002A391E /* Products */,
+				D59F829F868C610497247FC5 /* Pods */,
+				601EF7BE27A0D6D1E77FBC4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +122,8 @@
 		7277A4FB204E8FFC002A391E /* HSZRemindUserToUpdate */ = {
 			isa = PBXGroup;
 			children = (
+				7277A52F204E90C1002A391E /* Support */,
+				7277A52E204E90C1002A391E /* View */,
 				7277A4FC204E8FFC002A391E /* AppDelegate.h */,
 				7277A4FD204E8FFC002A391E /* AppDelegate.m */,
 				7277A4FF204E8FFC002A391E /* ViewController.h */,
@@ -132,6 +155,33 @@
 			path = HSZRemindUserToUpdateUITests;
 			sourceTree = "<group>";
 		};
+		7277A52E204E90C1002A391E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7277A533204F8D69002A391E /* RemindUpdateView.h */,
+				7277A534204F8D69002A391E /* RemindUpdateView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7277A52F204E90C1002A391E /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				7277A530204E90E3002A391E /* SZUtils.h */,
+				7277A531204E90E3002A391E /* SZUtils.m */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		D59F829F868C610497247FC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D6423583112473A7EF89C07 /* Pods-HSZRemindUserToUpdate.debug.xcconfig */,
+				F82D68B3C809BA58E90C297B /* Pods-HSZRemindUserToUpdate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7277A525204E8FFD002A391E /* Build configuration list for PBXNativeTarget "HSZRemindUserToUpdate" */;
 			buildPhases = (
+				8080684AA29E3F7632C795DF /* [CP] Check Pods Manifest.lock */,
 				7277A4F5204E8FFC002A391E /* Sources */,
 				7277A4F6204E8FFC002A391E /* Frameworks */,
 				7277A4F7204E8FFC002A391E /* Resources */,
+				E225B20099CF25D7E14FB9D2 /* [CP] Embed Pods Frameworks */,
+				695E2DA79E5853F34CF8C968 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,13 +313,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		695E2DA79E5853F34CF8C968 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HSZRemindUserToUpdate/Pods-HSZRemindUserToUpdate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8080684AA29E3F7632C795DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HSZRemindUserToUpdate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E225B20099CF25D7E14FB9D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HSZRemindUserToUpdate/Pods-HSZRemindUserToUpdate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7277A4F5204E8FFC002A391E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7277A535204F8D69002A391E /* RemindUpdateView.m in Sources */,
 				7277A501204E8FFC002A391E /* ViewController.m in Sources */,
 				7277A50C204E8FFC002A391E /* main.m in Sources */,
+				7277A532204E90E3002A391E /* SZUtils.m in Sources */,
 				7277A4FE204E8FFC002A391E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,26 +534,36 @@
 		};
 		7277A526204E8FFD002A391E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D6423583112473A7EF89C07 /* Pods-HSZRemindUserToUpdate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JA7UMD99EC;
 				INFOPLIST_FILE = HSZRemindUserToUpdate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hesongze.HSZRemindUserToUpdate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		7277A527204E8FFD002A391E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F82D68B3C809BA58E90C297B /* Pods-HSZRemindUserToUpdate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JA7UMD99EC;
 				INFOPLIST_FILE = HSZRemindUserToUpdate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hesongze.HSZRemindUserToUpdate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
