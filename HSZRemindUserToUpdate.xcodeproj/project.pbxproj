@@ -17,6 +17,10 @@
 		7277A521204E8FFD002A391E /* HSZRemindUserToUpdateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7277A520204E8FFD002A391E /* HSZRemindUserToUpdateUITests.m */; };
 		7277A532204E90E3002A391E /* SZUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7277A531204E90E3002A391E /* SZUtils.m */; };
 		7277A535204F8D69002A391E /* RemindUpdateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7277A534204F8D69002A391E /* RemindUpdateView.m */; };
+		88D83F88221544B400BFBADE /* HSZRemindUserUpdateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D83F87221544B400BFBADE /* HSZRemindUserUpdateVC.m */; };
+		88D83F972215497C00BFBADE /* HSZFocusUpdateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D83F942215497C00BFBADE /* HSZFocusUpdateView.m */; };
+		88D83F982215497C00BFBADE /* HSZRemindUpdateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D83F952215497C00BFBADE /* HSZRemindUpdateView.m */; };
+		88D83F9C221549A400BFBADE /* HSZUpdateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D83F9B221549A400BFBADE /* HSZUpdateModel.m */; };
 		91CF9AFCBE7E6259B4F96C72 /* libPods-HSZRemindUserToUpdate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF8FD1ED48BE29F2EC03417 /* libPods-HSZRemindUserToUpdate.a */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +64,14 @@
 		7277A531204E90E3002A391E /* SZUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZUtils.m; sourceTree = "<group>"; };
 		7277A533204F8D69002A391E /* RemindUpdateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemindUpdateView.h; sourceTree = "<group>"; };
 		7277A534204F8D69002A391E /* RemindUpdateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemindUpdateView.m; sourceTree = "<group>"; };
+		88D83F86221544B400BFBADE /* HSZRemindUserUpdateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSZRemindUserUpdateVC.h; sourceTree = "<group>"; };
+		88D83F87221544B400BFBADE /* HSZRemindUserUpdateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSZRemindUserUpdateVC.m; sourceTree = "<group>"; };
+		88D83F932215497C00BFBADE /* HSZRemindUpdateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSZRemindUpdateView.h; sourceTree = "<group>"; };
+		88D83F942215497C00BFBADE /* HSZFocusUpdateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSZFocusUpdateView.m; sourceTree = "<group>"; };
+		88D83F952215497C00BFBADE /* HSZRemindUpdateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSZRemindUpdateView.m; sourceTree = "<group>"; };
+		88D83F962215497C00BFBADE /* HSZFocusUpdateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSZFocusUpdateView.h; sourceTree = "<group>"; };
+		88D83F9A221549A400BFBADE /* HSZUpdateModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSZUpdateModel.h; sourceTree = "<group>"; };
+		88D83F9B221549A400BFBADE /* HSZUpdateModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSZUpdateModel.m; sourceTree = "<group>"; };
 		F82D68B3C809BA58E90C297B /* Pods-HSZRemindUserToUpdate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSZRemindUserToUpdate.release.xcconfig"; path = "Pods/Target Support Files/Pods-HSZRemindUserToUpdate/Pods-HSZRemindUserToUpdate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +134,7 @@
 		7277A4FB204E8FFC002A391E /* HSZRemindUserToUpdate */ = {
 			isa = PBXGroup;
 			children = (
+				88D83F852215449B00BFBADE /* HSZRemindUserUpdateVC */,
 				7277A52F204E90C1002A391E /* Support */,
 				7277A52E204E90C1002A391E /* View */,
 				7277A4FC204E8FFC002A391E /* AppDelegate.h */,
@@ -171,6 +184,29 @@
 				7277A531204E90E3002A391E /* SZUtils.m */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		88D83F852215449B00BFBADE /* HSZRemindUserUpdateVC */ = {
+			isa = PBXGroup;
+			children = (
+				88D83F992215498C00BFBADE /* Model */,
+				88D83F86221544B400BFBADE /* HSZRemindUserUpdateVC.h */,
+				88D83F87221544B400BFBADE /* HSZRemindUserUpdateVC.m */,
+				88D83F932215497C00BFBADE /* HSZRemindUpdateView.h */,
+				88D83F952215497C00BFBADE /* HSZRemindUpdateView.m */,
+				88D83F962215497C00BFBADE /* HSZFocusUpdateView.h */,
+				88D83F942215497C00BFBADE /* HSZFocusUpdateView.m */,
+			);
+			path = HSZRemindUserUpdateVC;
+			sourceTree = "<group>";
+		};
+		88D83F992215498C00BFBADE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88D83F9A221549A400BFBADE /* HSZUpdateModel.h */,
+				88D83F9B221549A400BFBADE /* HSZUpdateModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D59F829F868C610497247FC5 /* Pods */ = {
@@ -370,10 +406,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7277A535204F8D69002A391E /* RemindUpdateView.m in Sources */,
+				88D83F972215497C00BFBADE /* HSZFocusUpdateView.m in Sources */,
+				88D83F982215497C00BFBADE /* HSZRemindUpdateView.m in Sources */,
 				7277A501204E8FFC002A391E /* ViewController.m in Sources */,
 				7277A50C204E8FFC002A391E /* main.m in Sources */,
 				7277A532204E90E3002A391E /* SZUtils.m in Sources */,
 				7277A4FE204E8FFC002A391E /* AppDelegate.m in Sources */,
+				88D83F9C221549A400BFBADE /* HSZUpdateModel.m in Sources */,
+				88D83F88221544B400BFBADE /* HSZRemindUserUpdateVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,7 +579,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JA7UMD99EC;
+				DEVELOPMENT_TEAM = X62QS6YH49;
 				INFOPLIST_FILE = HSZRemindUserToUpdate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -557,7 +597,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JA7UMD99EC;
+				DEVELOPMENT_TEAM = X62QS6YH49;
 				INFOPLIST_FILE = HSZRemindUserToUpdate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

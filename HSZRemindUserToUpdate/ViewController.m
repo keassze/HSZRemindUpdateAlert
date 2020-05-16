@@ -10,6 +10,7 @@
 #import "SZUtils.h"
 #import "RemindUpdateView.h"
 #import "AppDelegate.h"
+#import "HSZRemindUserUpdateVC/HSZRemindUserUpdateVC.h"
 
 @interface ViewController ()<RemindUpdateViewDelegate>
 
@@ -20,6 +21,12 @@
 
 @implementation ViewController
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.view.backgroundColor = [UIColor redColor];
@@ -29,40 +36,38 @@
      ** 1、重新生成一个AlertController
      ** 2、最好的方法是自定义一个View盖在Window上
      */
-//    [self createAlertController];                       //方法一
-    self.remindUpdateView.hidden = NO;                   //方法二
-    
+    [self createAlertController];                       //方法一
+//    self.remindUpdateView.hidden = NO;                   //方法二
 }
 
 - (void)createAlertController {
     [[SZUtils shareUtils] checkTheNewestVersion:^(BOOL isNewest) {
         if (!isNewest) {
-            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"更新提醒" message:@"您的APP不是最新的版本~有可能导致您无法使用~请前往APP STORE更新" preferredStyle:UIAlertControllerStyleAlert];
-            [self presentViewController:alertController animated:YES completion:^{
-                NSLog(@"当前不是最新版本");
-            }];
-            UIAlertAction *updateAction = [UIAlertAction actionWithTitle:@"前往更新" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                //不允许该弹窗消失
-                [self createAlertController];
-                //前往APP STORE更新
-                [[SZUtils shareUtils] goToAppStore];
-            }];
-            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"暂不更新" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-                //暂不更新(还要判断是否必须更新才允许用户继续使用)
-                //这里默认不允许继续使用
-                [[SZUtils shareUtils] exitApplication];
-            }];
-            [alertController addAction:updateAction];
-            [alertController addAction:cancelAction];
+            HSZRemindUserUpdateVC *vc = [[HSZRemindUserUpdateVC alloc] init];
+            UINavigationController *baseNav = [[UINavigationController alloc] initWithRootViewController:vc];
+            [baseNav setDefinesPresentationContext:YES];
+            [baseNav setModalPresentationStyle:UIModalPresentationCustom];
+            [self presentViewController:baseNav animated:NO completion:nil];
+//            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"更新提醒" message:@"您的APP不是最新的版本~有可能导致您无法使用~请前往APP STORE更新" preferredStyle:UIAlertControllerStyleAlert];
+//            [self presentViewController:alertController animated:YES completion:^{
+//                NSLog(@"当前不是最新版本");
+//            }];
+//            UIAlertAction *updateAction = [UIAlertAction actionWithTitle:@"前往更新" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//                //不允许该弹窗消失
+//                [self createAlertController];
+//                //前往APP STORE更新
+//                [[SZUtils shareUtils] goToAppStore];
+//            }];
+//            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"暂不更新" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+//                //暂不更新(还要判断是否必须更新才允许用户继续使用)
+//                //这里默认不允许继续使用
+//                [[SZUtils shareUtils] exitApplication];
+//            }];
+//            [alertController addAction:updateAction];
+//            [alertController addAction:cancelAction];
         }
     }];
 }
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

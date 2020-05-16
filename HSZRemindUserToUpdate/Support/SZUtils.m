@@ -10,7 +10,7 @@
 #import "AppDelegate.h"
 #import <AFNetworking/AFNetworking.h>
 
-#define APPID   @"998252357" //公司APPID
+#define APPID   @"1341530752" //公司APPID
 
 @implementation SZUtils
 
